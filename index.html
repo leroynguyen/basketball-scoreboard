@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard-container">
+        <h3>HOME</h3>
+        <div class="scoreboard">
+          <h2 class="winner" id="home-score-el">0</h2>
+        </div>
+        <div class="home-score-btn-container">
+          <button id="home-score-btn-1" onclick="increaseHomeScoreOne()">
+            +1
+          </button>
+          <button id="home-score-btn-2" onclick="increaseHomeScoreTwo()">
+            +2
+          </button>
+          <button id="home-score-btn-3" onclick="increaseHomeScoreThree()">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="scoreboard-container">
+        <h3>GUEST</h3>
+        <div class="scoreboard">
+          <h2 class="winner" id="guest-score-el">0</h2>
+        </div>
+        <div class="guest-score-btn-container">
+          <button id="guest-score-btn-1" onclick="increaseGuestScoreOne()">
+            +1
+          </button>
+          <button id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">
+            +2
+          </button>
+          <button id="guest-score-btn-3" onclick="increaseGuestScoreThree()">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="new-game-btn" onclick="newGame()">New Game</button>
+    <script src="index.js"></script>
+  </body>
+</html>
